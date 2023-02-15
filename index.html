@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <div>
+        <label for="companyName">Company Name:</label>
+        <input type="text" id="companyName">
+        <br>
+        <label for="contactName">Contact Name:</label>
+        <input type="text" id="contactName">
+        <br>
+        <label for="contactTitle">Contact Title:</label>
+        <input type="text" id="contactTitle">
+        <br>
+        <label for="country">Country:</label>
+        <input type="text" id="country">
+    </div>
+    <div>
+        <button onclick="setSupliers()">Set Supliers</button>
+    </div>
+    <br>
+    <br>
+    <div>
+        <div>
+            <label>Id:</label>
+            <input type="text" id="suplierId" />
+        </div>
+        <div>
+            <button onclick="deleteSuplierById()">Delete</button>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div>
+        <ul id="_companyName">
+
+        </ul>
+        <button onclick="getCompanyName()">Get Company Name</button>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
